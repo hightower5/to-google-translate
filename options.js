@@ -31,7 +31,7 @@ function saveOptions(e) {
             chrome.i18n.getMessage('contextMenuTitleTranslate', [pageLang.value, userLang.value]));
         updateContextMenuTitle('tts', 
             chrome.i18n.getMessage('contextMenuTitleTextToSpeech', ttsLang.value));
-        showMessage('Settings saved');
+        showMessage('Einstellungen gespeichert');
         
         if (enableTT.checked == false) {
             removeContextMenu('translate');
